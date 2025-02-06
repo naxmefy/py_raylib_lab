@@ -1,5 +1,5 @@
 from pyray import *
-from raylib import * 
+from raylib import *
 from os.path import join
 
 init_window(1920, 1080, "002 Move")
@@ -7,12 +7,12 @@ init_window(1920, 1080, "002 Move")
 
 # imports
 ship = load_texture(join('assets', 'clear-code-raylib-intro', 'basics', 'spaceship.png'))
-ship_pos = Vector2(0,0)
-ship_direction = Vector2(1,1)
+ship_pos = Vector2(0, 0)
+ship_direction = Vector2(1, 1)
 ship_speed = 800
 
 while not window_should_close():
-    
+
     # updates
     if ship_pos.y >= 1080 - 40:
         ship_direction.y = -1
@@ -31,6 +31,6 @@ while not window_should_close():
     begin_drawing()
     clear_background(BLACK)
     draw_texture_v(ship, ship_pos, WHITE)
-    draw_fps(0,0)
+    draw_fps(0, 0)
     end_drawing()
 close_window()
