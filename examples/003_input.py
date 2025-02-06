@@ -2,7 +2,7 @@ from pyray import *
 from raylib import *
 from os.path import join
 
-init_window(1920, 1080, "Input")
+init_window(1920, 1080, "003 Input")
 set_exit_key(KEY_ESCAPE)
 
 ship_texture = load_texture(join('assets', 'clear-code-raylib-intro', 'basics', 'spaceship.png'))

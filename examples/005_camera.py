@@ -2,7 +2,7 @@ from pyray import *
 from raylib import *
 from random import randint, choice
 
-init_window(1920, 1080, "Camera")
+init_window(1920, 1080, "005 Camera")
 
 # player
 pos = Vector2()

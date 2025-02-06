@@ -1,7 +1,7 @@
 from pyray import *
 from raylib import *
 
-init_window(1920, 1080, "Collisions")
+init_window(1920, 1080, "004 Collisions")
 player_pos = Vector2(0, 0)
 obstacle_pos = Vector2(500, 400)
 player_radius = 50
