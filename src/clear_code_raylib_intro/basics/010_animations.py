@@ -1,11 +1,10 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 from os.path import join
 
 
 class AnimatedSprite:
     def __init__(self):
-        self.animation_frames = [load_texture(join('assets', 'clear-code-raylib-intro', 'basics', 'animation', f'{i}.png')) for i in range(8)]
+        self.animation_frames = [load_texture(join('assets', 'clear_code_raylib_intro', 'basics', 'animation', f'{i}.png')) for i in range(8)]
         self.animation_index, self.animation_speed = 0, 5
 
     def update(self, dt):

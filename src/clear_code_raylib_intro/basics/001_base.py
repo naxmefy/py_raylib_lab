@@ -1,21 +1,20 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 from os.path import join
 
 init_window(1920, 1080, '001 Base')
 
 # import images/textures
-spaceship_texture = load_texture(join('assets', 'clear-code-raylib-intro', 'basics', 'spaceship.png'))
-spaceship_image = load_image(join('assets', 'clear-code-raylib-intro', 'basics', 'spaceship.png'))
+spaceship_texture = load_texture(join('assets', 'clear_code_raylib_intro', 'basics', 'spaceship.png'))
+spaceship_image = load_image(join('assets', 'clear_code_raylib_intro', 'basics', 'spaceship.png'))
 image_color_grayscale(spaceship_image)
 new_texture = load_texture_from_image(spaceship_image)
 
-cowboy_image = load_image(join('assets', 'clear-code-raylib-intro', 'basics', 'animation', '0.png'))
+cowboy_image = load_image(join('assets', 'clear_code_raylib_intro', 'basics', 'animation', '0.png'))
 image_color_invert(cowboy_image)
 cowboy_texture = load_texture_from_image(cowboy_image)
 
 # import font
-font = load_font(join('assets', 'clear-code-raylib-intro', 'basics', 'Zero Hour.otf'))
+font = load_font(join('assets', 'clear_code_raylib_intro', 'basics', 'Zero Hour.otf'))
 
 while not window_should_close():
     begin_drawing()

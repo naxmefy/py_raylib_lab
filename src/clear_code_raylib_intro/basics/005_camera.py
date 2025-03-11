@@ -1,5 +1,4 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 from random import randint, choice
 
 init_window(1920, 1080, "005 Camera")
@@ -50,12 +49,12 @@ while not window_should_close():
 
     # drawing
     begin_drawing()
-    begin_mode_2d(camera)
+    begin_mode2d(camera)
     clear_background(WHITE)
     for circle in circles:
         draw_circle_v(*circle)
     draw_circle_v(pos, radius, BLACK)
-    end_mode_2d()
+    end_mode2d()
     end_drawing()
 
 close_window()

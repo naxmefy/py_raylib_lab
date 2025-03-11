@@ -1,5 +1,4 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 from random import choice
 
 

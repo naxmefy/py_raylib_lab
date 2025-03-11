@@ -1,5 +1,4 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 
 init_window(1920, 1080, "004 Collisions")
 player_pos = Vector2(0, 0)

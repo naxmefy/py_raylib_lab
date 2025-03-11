@@ -1,5 +1,4 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 
 init_window(850, 400, "000 First")
 

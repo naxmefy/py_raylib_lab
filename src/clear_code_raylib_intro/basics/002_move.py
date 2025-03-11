@@ -1,12 +1,11 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 from os.path import join
 
 init_window(1920, 1080, "002 Move")
 # set_target_fps(100)
 
 # imports
-ship = load_texture(join('assets', 'clear-code-raylib-intro', 'basics', 'spaceship.png'))
+ship = load_texture(join('assets', 'clear_code_raylib_intro', 'basics', 'spaceship.png'))
 ship_pos = Vector2(0, 0)
 ship_direction = Vector2(1, 1)
 ship_speed = 800

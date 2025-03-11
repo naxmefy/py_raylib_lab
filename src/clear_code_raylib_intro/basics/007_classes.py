@@ -1,5 +1,4 @@
-from pyray import *
-from raylib import *
+from raylibpy import *
 from os.path import join
 
 
@@ -16,13 +15,13 @@ class Sprite:
 class Player(Sprite):
     def __init__(self, pos):
         super().__init__(pos, 400)
-        self.texture = load_texture(join('assets', 'clear-code-raylib-intro', 'basics', 'spaceship.png'))
+        self.texture = load_texture(join('assets', 'clear_code_raylib_intro', 'basics', 'spaceship.png'))
         self.direction = Vector2()
 
     def update(self, dt):
         self.direction.x = int(is_key_down(KEY_RIGHT)) - int(is_key_down(KEY_LEFT))
         self.direction.y = int(is_key_down(KEY_DOWN)) - int(is_key_down(KEY_UP))
-        self.direction = Vector2Normalize(self.direction)
+        self.direction = vector2_normalize(self.direction)
 
         # update
         self.move(dt)
